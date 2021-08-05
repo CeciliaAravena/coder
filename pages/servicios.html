@@ -15,15 +15,12 @@
       <link rel="icon" href="estilos/media/favicon (10).ico" />
 
       <!--ENLACE CSS-->
-      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="/css/main.css" />
   
       <!-- TIPOGRAFIAS GOOGLE FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com" />
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;500;700&display=swap"
-        rel="stylesheet"
-      />
+     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet"/>
   
       <!-- FONT AWESOME -->
     <script
@@ -32,149 +29,62 @@
     ></script>
 </head>
 <body>
-    
-    <header class="header-sitio">
-        <div class="container header-container">
-            <h1>SURFACE</h1>
-
-            <a href="#nav" class="menu-abrir"><i class="fas fa-bars"></i></a>
-            <nav id="nav">
-                <a href="../index.html">Inicio</a>
-                <a href="sobremi.html">Sobre Mi</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="#" class="menu-cerrar"><i class="far fa-times-circle"></i></a>
-            </nav>
+        <!-- MENU -->
+    <header>
+      <nav>
+			<div class="logo">
+				<a href="../index.html"
+				  ><img src="../img/logo surface-2.png" alt="logo"
+				/></a>
         </div>
+        <input type="checkbox" id="checkMenu" />
+        <label for="checkMenu" class="botonMenu">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="../index.html"> Inicio </a></li>
+          <li><a href="sobremi.html"> Sobre mi </a></li>
+		  <li><a class="itemActivo" href="servicios.html">Servicios</a></li>
+          <li><a href="portfolio.html"> Portfolio </a></li>
+          <li><a href="contacto.html"> Contacto </a></li>
+        </ul>
+      </nav>
     </header>
-<br>
-
-	<section class="contenedorA">
-		<div class="tarjeta"> <!-- Bloque -->
-			<img class="tarjeta__img" src="../img/cm.png" alt="">
-			<div>
-				<h3 class="tarjeta__titulo">
-					Community Manager
-				</h3>
-				<p class="tarjeta__parrafo">
-					¡Logra redes sociales armónicas y coherentes para vender más!
-					<ol>
-						<li>
-							¿Cómo trabajamos?
-						</li>
-						<li>
-							Definimos tu audiencia y el mix de contenido ideal: contenido de valor + contenido comercial + contenido de posicionamiento de marca. 
-                            Encontramos el estilo gráfico que transmita la identidad de tu marca. 
-                            Diseñamos imágenes, GIF (imágenes animadas) o carruseles. 
-						</li>
-						<li>
-							Te proponemos un texto que acompañe los contenidos.
-                            Estructuramos el texto para lograr una fácil lectura. 
-                            Incluimos hashtags para aumentar el alcance orgánico. 
-						</li>
-					</ol>
-				</p>
-				<a href="#" class="boton boton--derecha"><!-- Bloque -->
-					Ver más
-				</a>
-			</div>
-	</section>
-
-
-	<section class="contenedorA">
-		<div class="tarjeta"> <!-- Bloque -->
-			<img class="tarjeta__img" src="../img/branding.png" alt="">
-			<div>
-				<h3 class="tarjeta__titulo">
-					Publicidad
-				</h3>
-				<p class="tarjeta__parrafo">
-					¡Llega a más clientes, expande tu negocio!
-					<ol>
-						<li>
-							¿Cómo trabajamos?
-						</li>
-						<li>
-							Definimos el objetivo de tu publicidad: aumentar seguidores, aumentar tráfico a tu web, obtener datos de potenciales cliente, etc.
-                            Te recomendamos cual es mejor tipo de publicidad en base a tus objetivos
-						</li>
-						<li>
-							Diseñamos la publicidad - la imagen y el texto que acompaña la imagen.
-                             ¿Sabías que el contenido de la publicidad debe ser dinámico y claro? ¡Tenemos que llamar la atención de tus potenciales clientes, y en eso nos especializamos!    
-						</li>
-					</ol>
-				</p>
-				<a href="#" class="boton"><!-- Bloque -->
-					Ver más
-				</a>
-			</div>
-	</section>
-
-	<section class="contenedorB">
-		<div class="tarjeta"> <!-- Bloque -->
-			<img class="tarjeta__img" src="../img/diseño.png" alt="">
-			<div>
-				<h3 class="tarjeta__titulo">
-					Diseño Web
-				</h3>
-				<p class="tarjeta__parrafo">
-					Genera ingresos 24/7 con un diseño web moderno y dinámico.
-					<ol>
-						<li>
-							¿Cómo trabajamos?
-						</li>
-						<li>
-							Definimos en conjunto que tipo de web es más conveniente para tu negocio: 
-                            Tienda Online en WordPress 
-                            Tienda Online en Tienda Nube – solo disponible para México, Colombia, Chile y Argentina. 
-                            Tienda Online en Shopify 
-                            Web Institucional – sin carrito de compras. 
-                            También te asesoraremos sobre hosting, dominio y todo lo que necesitas saber para tener una web.
-						</li>
-						<li>
-							Definimos la estructura de tu web y el contenido. 
-                            Te solicitaremos información y comenzaremos el diseño. 
-                            Te informaremos avances semanalmente y podrás darnos una devolución para realizar las correcciones que creas necesarias.
-                            Por último, una vez validado el diseño, configuramos métodos de envío y pago – solo para Tienda Online. 
-                            ¡Listo, ya tienes tu web en funcionamiento!
-						</li>
-					</ol>
-				</p>
-				<a href="#" class="boton boton--derecha"><!-- Bloque -->
-					Ver más
-				</a>
-			</div>
-	</section>
-
-
-	<section class="contenedorB">
-		<div class="tarjeta"> <!-- Bloque -->
-			<img class="tarjeta__img" src="../img/branding.png" alt="">
-			<div>
-				<h3 class="tarjeta__titulo">
-					Branding
-				</h3>
-				<p class="tarjeta__parrafo">
-					¡Diseña una marca que comunique tu verdadera identidad y te posicione en el mercado!
-					<ol>
-						<li>
-							¿Cómo trabajamos?
-						</li>
-						<li>
-							Definimos en conjunto que buscas transmitir con tu marca y quienes son tus clientes objetivos. 
-                            Confeccionaremos la “Tabla de Inspiración” o “Mood Board”
-						</li>
-						<li>
-                            Propongo hasta 3 logos ¡Podrás solicitar los cambios que quieras - tienes hasta 3 instancias de cambios!
-						</li>
-					</ol>
-				</p>
-				<a href="#" class="boton"><!-- Bloque -->
-					Ver más
-				</a>
-			</div>
-	</section>
+		<!-- SERVICIOS -->
+<section class="servicios">
+	<h1>Servicios</h1>
+	<div class="contenedorServicios">
+	  <div class="cajas">
+		<div class="imgServicios">
+		  <img src="../img/community-manager.jpg" alt="foto ilustrativa" />
+		</div>
+		<div class="contenidoServicios">
+		  <h2>COMMUNITY MANAGER</h2>
+		  <p id="idiomas">
+			¡Logra redes sociales armónicas y coherentes para vender más!
+		  </p>
+		</div>
+	  </div>
+	  <div class="cajas">
+		<div class="imgServicios">
+		  <img src="../img/WD.jpg" alt="foto ilustrativa" />
+		</div>
+		<div class="contenidoServicios">
+		  <h2>DISEÑO WEB</h2>
+		  <p>Genera ingresos 24/7 con un diseño web moderno y dinámico.</p>
+		</div>
+	  </div>
+	  <div class="cajas">
+		<div class="imgServicios">
+		  <img src="../img/Publicidad-digital.png" alt="foto ilustrativa" />
+		</div>
+		<div class="contenidoServicios">
+		  <h2>PUBLICIDAD</h2>
+		  <p>¡Llega a más clientes, expande tu negocio!</p>
+		</div>
+	  </div>
+	</div>
+  </section>
 
  <!-- FOOTER  -->
  <footer>

@@ -1,0 +1,94 @@
+.contenedorDatos {
+    background-color: $colorNegro;
+    color: $colorBlanco;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .contenidoDatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .datos {
+    margin: 40px;
+    width: 250px;
+    padding: 30px;
+    transition: 0.5s ease-out;
+  
+    i {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+  
+    h3 {
+      font-weight: normal;
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .datos:hover {
+    color: $colorSecundario;
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+  
+    i {
+      animation-name: girar;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+      animation-duration:0.7s;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes girar {
+    0% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    25% {
+      transform: scale(1.1) rotate(6deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(0deg);
+      }
+    75% {
+      transform: scale(1.1) rotate(-6deg);
+    }
+    100% {
+      transform: scale(1.1) rotate(0deg);
+    }
+  }
+  
+  @media (max-width: 580px){
+    .contenedorDatos{
+      padding-bottom: 0;
+    }
+    .contenidoDatos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .datos {
+      padding: 20px;
+  
+      &:first-child{
+        padding-top: 0;
+        margin-top: 0;
+      }
+  
+      i {
+        font-size: 35px;
+        margin-bottom: 16px;
+      }
+    
+      h3 {
+        font-size: 13px;
+      }
+    }
+    
+  }
