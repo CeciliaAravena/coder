@@ -1,0 +1,154 @@
+// SOBRE MI -------------------------------------------------------------------------------------------------
+
+@media (min-width: 1024px) {
+    .contenedorSobreMi {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .izq {
+      position: relative;
+    }
+  
+    .izqContenido {
+      position: absolute;
+      right: -45px;
+    }
+  }
+  
+  .contenedorSobreMi {
+    .izq {
+      background-image: linear-gradient(
+        to bottom,
+        $colorPrincipal,
+        $colorSecundario 70%,
+      );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .izqContenido > div {
+        background: $colorSecundario;
+        padding: 30px 30px 40px 25px;
+        text-align: center;
+        color: $colorBlanco;
+      }
+    }
+  
+    .izqContenido {
+      box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
+  
+      h2 {
+        font-size: 25px;
+        margin: 20px;
+        line-height: 1.2;
+        padding-bottom: 10px;
+        border-bottom: 2.5px solid $colorBlanco;
+      }
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+    }
+  
+    .imgSobreMi {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+  
+      img {
+        display: block;
+        width: 200px;
+      }
+    }
+  
+    .sombra {
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-60%);
+      bottom: -20px;
+      height: 7px;
+      width: 50px;
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+  
+    .sombra:hover .imgSobreMi {
+      transform: translateY(-15px);
+    }
+  
+    .sombra:hover::after {
+      opacity: 1;
+    }
+  
+    .der {
+      background: $colorBlanco;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 80px;
+      text-align: center;
+  
+      h1 {
+        font-size: 100px;
+        text-transform: uppercase;
+  
+        span {
+          color: $colorPrincipal;
+        }
+      }
+  
+      h2 {
+        font-weight: bolder;
+        font-style: italic;
+      }
+    }
+  
+    
+  
+    .sobreMiContenido {
+      p {
+        padding: 5px;
+      }
+    }
+  }
+  
+  @media (max-width: 940px) {
+    .contenedorSobreMi {
+      .izq {
+        padding-top: 120px;
+      }
+  
+      .der {
+        padding: 50px 50px;
+  
+        h1 {
+          font-size: 80px;
+        }
+  
+        h2 {
+          font-size: 20px;
+        }
+      }
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
